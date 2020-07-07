@@ -9,13 +9,15 @@
 * [About.](#about)
 * [Documentation.](#documentation)
 * [General.](#general)
+* [oc get](#oc-get)
 * [oc new-build](#oc-new-build)
 * [oc start-build](#oc-start-build)
 * [oc new-app](#oc-new-app)
-* [oc espose](#oc-expose)
+* [oc expose](#oc-expose)
 * [oc describe](#oc-describe)
 * [oc scale](#oc-scale)
 * [oc delete](#oc-delete)
+* [oc adm](#oc-adm)
 * [Help.](#help)
 
 
@@ -35,6 +37,33 @@
 
 
 ## General.
+
+| Key/Command                                                                                      | Description                                                                |
+| ------------------------------------------------------------------------------------------------ | -------------------------------------------------------------------------- |
+| oc cluster up                                                                                    |                                                                            |
+| oc cluster down                                                                                  |                                                                            |
+| oc login                                                                                         |                                                                            |
+| oc login -u [USERNAME] -p [PASSWORD]                                                             |                                                                            |
+| oc login -u system:admin                                                                         |                                                                            |
+| oc logout                                                                                        |                                                                            |
+| oc cluster up --public-hostname=SERVER_IP                                                        |                                                                            |
+| oc status                                                                                        |                                                                            |
+| oc whoami                                                                                        |                                                                            |
+| oc whoami -t                                                                                     | Get token.                                                                 |
+| oc whoami --token                                                                                |                                                                            |
+|                                                                                                  |                                                                            |
+
+
+
+
+
+## oc get
+
+| Key/Command                                                                                      | Description                                                                |
+| ------------------------------------------------------------------------------------------------ | -------------------------------------------------------------------------- |
+| oc get projects                                                                                  |                                                                            |
+| oc get users                                                                                     |                                                                            |
+|                                                                                                  |                                                                            |
 
 
 
@@ -112,6 +141,17 @@
 | --------------------------------------------------------------- | -------------------------------------------------------------------------- |
 | oc delete all -l app=[nameApp]                                  |                                                                            |
 |                                                                 |                                                                            |
+
+
+
+
+
+## oc adm
+
+| Key/Command                                                                                      | Description                                                                |
+| ------------------------------------------------------------------------------------------------ | -------------------------------------------------------------------------- |
+| oc adm policy add-cluster-role-to-user cluster-admin [userName]                                  |                                                                            |
+|                                                                                                  |                                                                            |
 
 
 
